@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>GameDev Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="logo">GameDev Portfolio</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about" class="nav__link active">Про автора</a></li>
+          <li class="nav__item"><a href="#works" class="nav__link">Основні роботи</a></li>
+          <li class="nav__item"><a href="#cooperation" class="nav__link">Співпраця</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>  
+
+  <div class="page-container">
+    <main class="main-content">
+
+      <!-- Про автора -->
+      <section id="about" class="about-section">
+          <div class="author-card">
+            <div class="author-card__avatar-box">
+              <img src="img/person.png" alt="Фото автора" class="author-card__avatar">
+            </div>
+            <div class="author-card__bio">
+              <h2 class="section-title">Про автора</h2>
+              <p class="author-card__text">
+                Спеціалізуюся на розробці 3D-ігор, проєктуванні інтерактивних механік 
+                та програмуванні на C# та C++. Працюю з рушієм Unity: створюю логіку 
+                взаємодії персонажів із навколишнім середовищем, налаштовують фізику 
+                об'єктів та оптимізую ресурси гри. Поєдную технічний підхід до 
+                написання коду з розумінням ігрового дизайну та атмосфери.
+              </p>
+            </div>
+        </div>
+      </section>
+
+      <!-- Основні роботи -->
+      <section id="works" class="works-section">
+          <h2 class="section-title works-title">Основні роботи</h2>
+          <div class="works-list">
+
+            <!-- картка 1 -->
+            <article class="work-card">
+              <div class="work-card__thumb">
+                <img src="img/environment.jpg" alt="3D Environment Design" class="work-card__img">
+              </div>
+              <div class="work-card__content">
+                <h3 class="work-card__title">3D Environment Design</h3>
+                <p class="work-card__desc">
+                  Моделювання приміщення, налаштування модульної геометрії стін, 
+                  джерел світла та запікання тіней.
+                </p>
+              </div>
+              <div class="work-card__accent" aria-hidden="true"></div>
+            </article>
+
+            <!-- Картка 2 -->
+            <article class="work-card">
+              <div class="work-card__thumb">
+                <img src="img/flashlight.jpg" alt="Low-Poly Game Assets" class="work-card__img">
+              </div>
+              <div class="work-card__content">
+                <h3 class="work-card__title">Low-Poly Game Assets</h3>
+                <p class="work-card__desc">
+                  Створення оптимізованих 3D-моделей предметів, налаштування 
+                  розгортки (UV) та стилізованих текстур для гри.
+                </p>
+              </div>
+              <div class="work-card__accent" aria-hidden="true"></div>
+            </article>
+
+            <!-- Картка 3 -->
+            <article class="work-card">
+              <div class="work-card__thumb">
+                <img src="img/inventory.jpg" alt="Game UI & Inventory System" class="work-card__img">
+              </div>
+              <div class="work-card__content">
+                <h3 class="work-card__title">Game UI & Inventory System</h3>
+                <p class="work-card__desc">
+                  Проєктування інтерфейсу користувача: сітка інвентарю, слоти 
+                  екіпірування та меню взаємодії з предметами.
+                </p>
+              </div>
+              <div class="work-card__accent" aria-hidden="true"></div>
+            </article>
+        </div>
+      </section>
+
+      <!-- Співпраця -->
+      <section id="cooperation" class="promo-section">
+        <div class="promo-section__content">
+          <h2 class="promo-section__title">Ігрові прототипи та оптимізація</h2>
+          <p class="promo-section__desc">
+            Створюю інтерактивні прототипи ігрових механік на замовлення, 
+            налаштовую фізику та UI-інтерфейси для інді-ігор, проводжу 
+            рефакторинг та оптимізацію C# скриптів.
+          </p>
+          <a href="#contacts" class="btn btn--primary">Обговорити проєкт</a>
+        </div>
+        <div class="promo-section__media">
+          <img src="img/vs_code1.jpg" alt="Інтерфейс коду C#" class="promo-section__img">
+        </div>
+      </section>
+    </main>
+  </div>
+    <!-- Контакти -->
+    <footer id="contacts" class="footer">
+      <div class="container footer__inner">
+        <div class="footer__contacts">
+          <span class="footer__label">Контакти:</span>
+          <span>Email: <a href="mailto:gamedev@example.com">gamedev@example.com</a></span>
+          <span class="footer__divider">|</span>
+          <span>GitHub: <a href="https://github.com/example" target="_blank" rel="noopener noreferrer">[github.com/example]</a></span>
+          <span class="footer__divider">|</span>
+          <span>Місто: Київ, Україна</span>
+        </div>
+        <div class="footer__copyright">
+          &copy; 2026 GameDev Portfolio
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
